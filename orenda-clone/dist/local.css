@@ -1,0 +1,45 @@
+/* Original Orenda stylesheet is preserved. These rules replace runtime-only
+   theme initialization for the standalone preview. */
+.themify_builder .wow{visibility:visible}
+.tf_lazy{content-visibility:visible!important}
+.tf_swiper-slide{content-visibility:visible!important}
+.tf_swiper-slide[hidden]{display:none!important}
+.local-slider-controls{display:flex;align-items:center;justify-content:center;gap:16px;margin:20px 0}
+.local-slider-controls button{border:1px solid #a39870;background:transparent;color:#252631;border-radius:50%;width:36px;height:36px;cursor:pointer;padding:0;font-size:19px}
+.local-slider-controls button:hover{background:#a39870;color:#fff}
+#main-nav li:focus-within>.sub-menu,#main-nav li.local-open>.sub-menu{display:block;visibility:visible;opacity:1;pointer-events:auto}
+a:focus-visible,button:focus-visible{outline:2px solid #a39870;outline-offset:4px}
+@media(max-width:900px){#mobile-menu.local-open{display:block!important;visibility:visible!important;transform:none!important;right:0!important;position:fixed;top:0;bottom:0;width:min(360px,90vw);overflow:auto;z-index:10000;background:#f5f5f5;padding:65px 25px 25px;box-shadow:-10px 0 40px #0002}#mobile-menu.local-open #main-nav{display:block}#mobile-menu.local-open #main-nav li{display:block;float:none}#mobile-menu.local-open .sub-menu{position:static;width:auto;box-shadow:none;margin-left:12px}#mobile-menu.local-open #menu-icon-close{display:block}.local-menu-shade{position:fixed;inset:0;background:#0005;z-index:9999}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*{animation:none!important;transition:none!important}}
+/* Lower-page composition matched to the supplied desktop scroll reference. */
+@media (min-width: 901px) {
+ .themify_builder_content-156 .tb_1kzt31{padding-top:clamp(160px,19vw,310px);padding-bottom:0}
+ .themify_builder_content-156 .tb_1kzt31>.row_inner,
+ .themify_builder_content-156 .tb_b4t3636>.row_inner,
+ .themify_builder_content-156 .tb_kdav636>.row_inner{width:min(1160px,90%);max-width:1160px}
+ .themify_builder_content-156 .tb_5bax88.module-fancy-heading{padding-bottom:55px}
+ .themify_builder_content-156 .tb_ne3531{--col:repeat(3,minmax(0,1fr));--colg:0}
+ .themify_builder_content-156 .tb_b4t3636{padding-top:clamp(150px,19vw,310px);padding-bottom:0}
+ .themify_builder_content-156 .tb_b4t3636>.row_inner{--col:1.158fr 1.944fr;align-items:center;column-gap:3.2%}
+ .themify_builder_content-156 .tb_gve7791.module-image{margin-bottom:0}
+ .themify_builder_content-156 .tb_kdav636{padding-top:clamp(150px,19vw,310px);padding-bottom:160px}
+ .themify_builder_content-156 .tb_17py604,
+ .themify_builder_content-156 .tb_9obh53,
+ .themify_builder_content-156 .tb_wne7920{--col:.35fr 1.65fr .35fr 1.65fr;--colg:0}
+ .themify_builder_content-156 .tb_kdav636 .module-icon img{width:83px;height:83px;object-fit:contain}
+}
+@media (min-width:681px) and (max-width:900px){
+ .themify_builder_content-156 .tb_1kzt31{padding-top:100px;padding-bottom:0}
+ .themify_builder_content-156 .tb_b4t3636,.themify_builder_content-156 .tb_kdav636{padding-top:100px}
+ .themify_builder_content-156 .tb_kdav636{padding-bottom:90px}
+}
+@media(max-width:680px){
+ .themify_builder_content-156 .tb_1kzt31,
+ .themify_builder_content-156 .tb_b4t3636,
+ .themify_builder_content-156 .tb_kdav636{padding-top:65px;padding-bottom:40px}
+ .themify_builder_content-156 .tb_ne3531{row-gap:40px}
+}
+.local-slider-controls{gap:8px;margin:25px 0 45px}
+.local-slider-controls button{position:relative;width:10px;height:10px;min-width:10px;border:1px solid #20232e;border-radius:50%;background:transparent;font-size:0}
+.local-slider-controls button:before{content:'';position:absolute;inset:-8px}
+.local-slider-controls button[aria-current="true"]{background:#20232e}

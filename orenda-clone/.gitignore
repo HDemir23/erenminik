@@ -1,0 +1,28 @@
+# Local dependencies and caches
+node_modules/
+.cache/
+.npm/
+
+# Credentials and machine-specific configuration
+.env
+.env.*
+!.env.example
+.openai/
+.codex/
+
+# Generated archives, logs, and browser-test output
+*.zip
+*.tar.gz
+*.log
+output/
+playwright-report/
+test-results/
+
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# dist/ contains the website source and must be tracked.
